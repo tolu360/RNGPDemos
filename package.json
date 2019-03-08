@@ -1,0 +1,25 @@
+{
+  "name": "RNGPDemos",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node_modules/react-native/packager/packager.sh",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "16.6.3",
+    "react-native": "^0.58.6",
+    "react-native-google-places": "file:/Users/tolu360/Code/react-native-google-places"
+  },
+  "devDependencies": {
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "24.3.1",
+    "flow-bin": "0.86.0",
+    "jest": "24.3.1",
+    "metro-react-native-babel-preset": "0.53.0",
+    "react-test-renderer": "16.6.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
