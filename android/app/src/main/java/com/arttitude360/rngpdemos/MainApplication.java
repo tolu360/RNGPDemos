@@ -1,4 +1,4 @@
-package com.rngpdemos;
+package com.arttitude360.rngpdemos;
 
 import android.app.Application;
 
