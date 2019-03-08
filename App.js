@@ -44,7 +44,15 @@ export default class App extends Component<Props, State> {
 
 
   onOpenAutocompletePress = () => {
-    RNGooglePlaces.openAutocompleteModal({initialQuery: 'vestar', locationRestriction: {latitudeSW, longitudeSW, latitudeNE, longitudeNE}})
+    RNGooglePlaces.openAutocompleteModal({
+      initialQuery: 'vestar', 
+      locationRestriction: {
+        latitudeSW: 6.3670553, 
+        longitudeSW: 2.7062895, 
+        latitudeNE: 6.6967964, 
+        longitudeNE: 4.351055
+      }
+      }, ['place_id', 'latlng', 'name', 'formatted_address'])
     .then((place) => {
 		  console.log(place);
     })
@@ -161,10 +169,6 @@ export default class App extends Component<Props, State> {
 
           <TouchableOpacity style={styles.button} onPress={this.onGetPlaceByIDPress}>
             <Text style={styles.buttonText}>Get Place By ID</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={styles.button} onPress={this.onGetPlacesByIDsPress}>
-            <Text style={styles.buttonText}>Get Places By IDs (New)</Text>
           </TouchableOpacity>
         </View>}
       </View>
