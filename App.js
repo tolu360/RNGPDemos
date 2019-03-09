@@ -52,7 +52,7 @@ export default class App extends Component<Props, State> {
         latitudeNE: 6.6967964, 
         longitudeNE: 4.351055
       }
-      }, ['place_id', 'latlng', 'name', 'formatted_address'])
+      }, ['placeID', 'location', 'name', 'address', 'types', 'openingHours', 'plusCode', 'rating', 'userRatingsTotal', 'viewport'])
     .then((place) => {
 		  console.log(place);
     })
@@ -92,12 +92,6 @@ export default class App extends Component<Props, State> {
 
   onGetPlaceByIDPress = () => {
     RNGooglePlaces.lookUpPlaceByID('ChIJhRTXUeeROxARmk_Rp3PtIvI')
-    .then((results) => console.log(results))
-    .catch((error) => console.log(error.message));
-  }
-
-  onGetPlacesByIDsPress = () => {
-    RNGooglePlaces.lookUpPlacesByIDs(['ChIJhRTXUeeROxARmk_Rp3PtIvI', 'ChIJy8Ny34yROxARPH21hx0a1gU', 'EiZNdXJ0YWxhIE11aGFtbWVkIERyaXZlLCBMYWdvcywgTmlnZXJpYQ'])
     .then((results) => console.log(results))
     .catch((error) => console.log(error.message));
   }
@@ -153,10 +147,6 @@ export default class App extends Component<Props, State> {
         {!this.state.showInput && <View>
           <TouchableOpacity style={styles.inputLauncher} onPress={this.onShowInputPress}>
             <Text style={{color: '#70818A'}}>Where to?</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={styles.button} onPress={this.onOpenPickerPress}>
-            <Text style={styles.buttonText}>Open PlacePicker Modal</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.button} onPress={this.onOpenAutocompletePress}>
