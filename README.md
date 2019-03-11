@@ -14,7 +14,7 @@ yarn
 pod install
 ```
 
-- Define a system variable represnting your Android API key e.g. on a Unix/Mac terminal run:
+- Define a system variable representing your Android API key e.g. on a Unix/Mac terminal run:
 
 ```bash
 export RNGP_ANDRIOD_API_KEY=Insert_API_KEY_here
@@ -24,4 +24,9 @@ export RNGP_ANDRIOD_API_KEY=Insert_API_KEY_here
 
 ```bash
 bundle exec pod keys set "rNGP_IOS_API_KEY" "Insert_API_KEY_here" 
+```
+- Run `pod install` again, run the following from the `/ios` directory:
+
+```bash
+pod install
 ```
