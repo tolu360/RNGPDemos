@@ -10,11 +10,20 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
+#import <Keys/RNGPDemosKeys.h>
+
+@import GooglePlaces;
+@import GoogleMaps;
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
+  RNGPDemosKeys *keys = [[RNGPDemosKeys alloc] init];
   NSURL *jsCodeLocation;
+  [GMSPlacesClient provideAPIKey:keys.rNGP_IOS_API_KEY];
+  [GMSServices provideAPIKey:keys.rNGP_IOS_API_KEY];
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 
