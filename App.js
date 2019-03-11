@@ -154,7 +154,7 @@ export default class App extends Component<Props, State> {
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.button} onPress={this.onGetCurrentPlacePress}>
-            <Text style={styles.buttonText}>Get Current Place (not on Android Emulators)</Text>
+            <Text style={styles.buttonText}>Get Current Place</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.button} onPress={this.onGetPlaceByIDPress}>
