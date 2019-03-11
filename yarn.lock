@@ -4140,8 +4140,9 @@ react-is@^16.6.3, react-is@^16.8.1, react-is@^16.8.4:
   version "16.8.4"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.4.tgz#90f336a68c3a29a096a3d648ab80e87ec61482a2"
 
-"react-native-google-places@file:/Users/tolu360/Code/react-native-google-places":
-  version "3.0.0-beta.2"
+react-native-google-places@^3.0.0-beta.10:
+  version "3.0.0-beta.10"
+  resolved "https://registry.yarnpkg.com/react-native-google-places/-/react-native-google-places-3.0.0-beta.10.tgz#788db6fc450f7f21ff4bfdc6c1cd65d5189f3e92"
 
 react-native@^0.58.6:
   version "0.58.6"
