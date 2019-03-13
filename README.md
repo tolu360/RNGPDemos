@@ -17,7 +17,7 @@ pod install
 - Define a system variable representing your Android API key e.g. on a Unix/Mac terminal run:
 
 ```bash
-export RNGP_ANDRIOD_API_KEY=Insert_API_KEY_here
+export RNGP_ANDROID_API_KEY=Insert_API_KEY_here
 ```
 - You may need to export this system/environment variable before every build or add them to your `~/.bash_profile` file or similar files.
 - For iOS, run the following from the `/ios` directory:
