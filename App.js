@@ -52,7 +52,7 @@ export default class App extends Component<Props, State> {
         latitudeNE: 6.6967964, 
         longitudeNE: 4.351055
       }
-      }, ['placeID', 'location', 'name', 'address', 'types', 'openingHours', 'plusCode', 'rating', 'userRatingsTotal', 'viewport'])
+      }, ['placeID', 'location', 'name', 'address', 'types', 'openingHours', 'plusCode', 'rating', 'userRatingsTotal', 'viewport', 'addressComponents'])
     .then((place) => {
 		  console.log(place);
     })
