@@ -4140,10 +4140,10 @@ react-is@^16.6.3, react-is@^16.8.1, react-is@^16.8.4:
   version "16.8.4"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.4.tgz#90f336a68c3a29a096a3d648ab80e87ec61482a2"
 
-react-native-google-places@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/react-native-google-places/-/react-native-google-places-3.0.1.tgz#599d718fc95724352de255d2931d3389f26f1328"
-  integrity sha512-gnQVcXp7I8R4JPhW0zaMkUmSsZwy4NxGGJIWOBll7jCQE3okK6C5Yp2g4YsbKteBTXw7CaQi5E+KMv0/fnZdaQ==
+react-native-google-places@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/react-native-google-places/-/react-native-google-places-3.0.5.tgz#270d7bb126760215a0f7112b7c513410212f5935"
+  integrity sha512-Ov70BAi9yXlruQ5qOHUpj78Kcb/uBMcN9fE6C42EgyfYAYL9v/szcylkqEXvyGjJo+2Jx9bTLiQtWlKNOHQPdQ==
 
 react-native@^0.58.6:
   version "0.58.6"
